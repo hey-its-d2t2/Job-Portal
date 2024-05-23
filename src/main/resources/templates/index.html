@@ -5,7 +5,7 @@
     <title>Job Portal - Home</title>
     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
     <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/font-awesome.min.css}"/>
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}"/>
     <meta charset="ISO-8859-1">
 
 </head>
@@ -39,6 +39,20 @@
         </label>
     </div>
 </nav>
+<form th:action="@{/global-search/}">
+    <div class="searchBox">
+        <div class="inner">
+
+            <input type="text" placeholder="Search for a job" name="job" th:value="${job}"/>
+            <input type="text" placeholder="Enter a location" name="location" th:value="${location}"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+        </div>
+    </div>
+</form>
+<footer>
+    <label class="copy-right">Copyright © hotdevjobs.com</label>
+</footer>
 
 
 <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
