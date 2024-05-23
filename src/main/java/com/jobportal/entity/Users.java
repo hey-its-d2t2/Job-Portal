@@ -2,15 +2,21 @@ package com.jobportal.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-@SuppressWarnings("JpaAttributeTypeInspection")
+//@SuppressWarnings("JpaAttributeTypeInspection")
 @Entity
 @Table(name = "users")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Users {
 
     @Id
