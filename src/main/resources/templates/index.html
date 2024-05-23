@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Job Portal - Home</title>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
+    <meta charset="ISO-8859-1">
+
 </head>
-<body>
-    <h1>Job Portal - Home</h1>
-    <a href="register.php">Register</a>
-    <a href="login.php">Login</a>
-    <a href="logout.php">Logout</a>
+<body  class="background">
+<nav class="main_div">
+    <div class="logo_left">
+        <label class="logo">
+            hotdevjobs
+        </label>
+        <label class="logo_com">
+            .com
+        </label>
+    </div>
+    <div class="logo_right">
+        <label class="Candidate_login_btn">
+            <a th:href="@{/login}">
+                Job Candidate Login
+            </a>
+            <a th:href="@{/register}">
+                /Register
+            </a>
+        </label>
+        <label class="Recruiter_login_btn">
+            <a th:href="@{/login}">
+                Recruiter Login
+            </a>
+            <a th:href="@{/register}">
+                /Register
+            </a>
+
+        </label>
+    </div>
+</nav>
+
+
+<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
 </body>
 </html>
