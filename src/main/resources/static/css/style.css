@@ -283,7 +283,7 @@ label.large-label {
 .hidden-overflow {
     overflow: hidden;
 }
-.coffee_mug_background {
+.Job-portal-register {
     height: 100vh;
     overflow: hidden;
     background-image: linear-gradient(
@@ -291,7 +291,7 @@ label.large-label {
             rgba(0, 34, 68, 0.5),
             rgba(0, 34, 68, 0.5)
     ),
-    url('../assets/coffee-mug.jpg');
+    url('../assets/Job-portal-register.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
