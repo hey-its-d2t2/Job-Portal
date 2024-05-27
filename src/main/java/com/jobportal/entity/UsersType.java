@@ -16,7 +16,7 @@ import java.util.List;
 @ToString
 public class UsersType {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userTypeId;
     private String userTypeName;
     @OneToMany(targetEntity = Users.class, mappedBy ="userTypeId", cascade = CascadeType.ALL)
