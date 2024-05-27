@@ -18,8 +18,8 @@ public class UsersType {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int userTypeId;
-    private String usersTypeId;
-    @OneToMany(targetEntity = Users.class, mappedBy ="usersTypeId", cascade = CascadeType.ALL)
+    private String userTypeName;
+    @OneToMany(targetEntity = Users.class, mappedBy ="userTypeId", cascade = CascadeType.ALL)
     private List<Users> users;
 
 }
