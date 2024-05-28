@@ -1,5 +1,7 @@
 package com.jobportal.config;
 
+import com.jobportal.services.CustomUserDetailsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -11,6 +13,13 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class WebSecurityConfig {
+   private final CustomUserDetailsService  customUserDetailsService;
+
+   @Autowired
+   public WebSecurityConfig(CustomUserDetailsService customUserDetailsService) {
+       this.customUserDetailsService = customUserDetailsService;
+   }
+
     private  final  String[] publicUrl = {"/",
             "/global-search/**",
             "/register",
@@ -42,7 +51,7 @@ public class WebSecurityConfig {
     protected AuthenticationProvider authenticationProvider(){
         DaoAuthenticationProvider authenticationProvider =  new DaoAuthenticationProvider();
         authenticationProvider.setPasswordEncoder(passwordEncoder());
-     //   authenticationProvider.setUserDetailsService(userDetailsService());
+        authenticationProvider.setUserDetailsService(customUserDetailsService);
 
         return authenticationProvider;
     }
