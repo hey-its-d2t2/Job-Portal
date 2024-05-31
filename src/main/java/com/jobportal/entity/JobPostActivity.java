@@ -18,28 +18,27 @@ import java.util.Date;
 public class JobPostActivity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Integer jobPostId;
+    private Integer jobPostId;
 
     @ManyToOne
-    @JoinColumn(name = "postById",referencedColumnName = "userId")
-    private Users postByID;
+    @JoinColumn(name = "postedById", referencedColumnName = "userId")
+    private Users postedById;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "jobLocationId",referencedColumnName = "Id")
+    @JoinColumn(name = "jobLocationId", referencedColumnName = "Id")
     private JobLocation jobLocationId;
 
-
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "jobCompanyId",referencedColumnName = "Id")
+    @JoinColumn(name = "jobCompanyId", referencedColumnName = "Id")
     private JobCompany jobCompanyId;
 
     @Transient
-    private boolean isActive;
+    private Boolean isActive =true;
 
     @Transient
-    private boolean isSaved;
+    private Boolean isSaved;
 
-    @Length(max =10000)
+    @Length(max = 10000)
     private String descriptionOfJob;
 
     private String jobType;
@@ -48,9 +47,7 @@ public class JobPostActivity {
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date postedDate;
-
     private String jobTitle;
-
 
 
 

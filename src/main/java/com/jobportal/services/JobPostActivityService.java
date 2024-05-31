@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class JobPostActivityService {
 
+    @Autowired
     private final JobPostActivityRepository jobPostActivityRepository;
 
-    @Autowired
-    public JobPostActivityService(JobPostActivityRepository jobPost) {
-        this.jobPostActivityRepository = jobPost;
+    public JobPostActivityService(JobPostActivityRepository jobPostActivityRepository) {
+        this.jobPostActivityRepository = jobPostActivityRepository;
     }
 
-    public JobPostActivity addNew(JobPostActivity jobPostActivity){
-        return this.jobPostActivityRepository.save(jobPostActivity);
+    public JobPostActivity addNew(JobPostActivity jobPostActivity) {
+        return jobPostActivityRepository.save(jobPostActivity);
     }
 }
