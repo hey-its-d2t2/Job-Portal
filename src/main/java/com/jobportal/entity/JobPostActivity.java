@@ -32,7 +32,7 @@ public class JobPostActivity {
     @JoinColumn(name = "jobCompanyId", referencedColumnName = "Id")
     private JobCompany jobCompanyId;
 
-    @Transient
+   // @Transient
     private Boolean isActive =true;
 
     @Transient
