@@ -50,8 +50,13 @@ The Job Portal project aims to create a robust and user-friendly platform for jo
 
 - ## Recruiter Dashboard:
   - **View Job Listings**: Allows recruiters to view all their posted jobs, along with relevant details such as the number of applications, job status, and the ability to edit or delete postings.
-  
-  ![Rec Dashboard](https://github.com/hey-its-d2t2/Job-Portal/assets/63626210/75da64de-9444-4a06-a234-c66686b07ede)
+
+  <img width="1907" height="937" alt="Screenshot 2025-09-18 093712" src="https://github.com/user-attachments/assets/7df7e8a1-b58c-45af-941b-e8f24eb056de" />
+
+- **Edit Job Listings**: Allows recruiters to edit all their posted jobs, along with relevant details such as the number of applications, job status, and the ability to edit or delete postings.
+
+  <img width="1907" height="957" alt="Screenshot 2025-09-18 093741" src="https://github.com/user-attachments/assets/763264da-00ed-4d7b-965e-6bbcc0a9085d" />
+
 
 # Planned Functionalities:
 
