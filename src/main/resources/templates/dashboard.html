@@ -77,9 +77,8 @@
                 width="50x"
                 th:if="${user.photosImagePath!=null}"
                 th:src="@{${user?.photosImagePath}}"
-        />
-
-        <label th:if="${user.firstName != null && user.lastName != null}"
+        /> 
+		<label th:if="${user.firstName != null && user.lastName != null}"
                th:text="${user.firstName+' '+user.lastName}"
                class="nav-item nav-link px-2 me-3">
         </label>
@@ -135,13 +134,15 @@
                             </div>
                             <div class="col-md-4 text-center">
                                 <label
-                                        th:text="${jobPost.jobLocationId.city+', '+ jobPost.jobLocationId.state}"
+                                        th:text="${jobPost.jobLocation.city+', '+ jobPost.jobLocation.state}"
+                
+                                        
                                 >
                                     City State</label
                                 >
                             </div>
                             <div class="col-md-4 text-right">
-                                <label th:text="@{${jobPost.jobCompanyId.name}}"
+                                <label th:text="@{${jobPost.jobCompany.name}}"
                                 >Recruiter Company Name</label
                                 >
                             </div>

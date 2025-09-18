@@ -42,4 +42,9 @@ public class JobSeekerProfile {
     public JobSeekerProfile(Users users) {
         this.userId = users;
     }
+    
+    public String getPhotosImagePath() {
+        if (profilePhoto == null) return null;
+        return "/uploads/" + profilePhoto;
+    }
 }
