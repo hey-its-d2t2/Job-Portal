@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CustomUserDetails implements UserDetails {
 
-    private final Users user;
+    private Users user;
 
     public CustomUserDetails(Users user) {
         this.user = user;

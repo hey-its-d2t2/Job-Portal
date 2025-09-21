@@ -24,6 +24,7 @@ import java.util.Optional;
 @Controller
 @RequestMapping("/recruiter-profile")
 public class RecruiterProfileController {
+
     private final UsersRepository usersRepository;
     private final RecruiterProfileService recruiterProfileService;
 
@@ -50,7 +51,7 @@ public class RecruiterProfileController {
         return "recruiter_profile";
     }
 
-    @PostMapping("addNew")
+    @PostMapping("/addNew")
     public String addNew(RecruiterProfile recruiterProfile, @RequestParam("image") MultipartFile multipartFile, Model model) {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
