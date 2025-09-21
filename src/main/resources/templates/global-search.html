@@ -71,6 +71,20 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <label>Employment Type</label>
+                          <div class="form-check">
+
+                            <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    th:checked="${internShip}"
+                                    id="internShip"
+                                    name="internShip"
+                                    th:value="InternShip"
+                            />
+                            <label class="form-check-label" for="InternShip">
+                                InternShip
+                            </label>
+                        </div>
                         <div class="form-check">
 
                             <input

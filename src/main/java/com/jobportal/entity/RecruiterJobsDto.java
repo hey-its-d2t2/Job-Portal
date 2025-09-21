@@ -1,10 +1,5 @@
 package com.jobportal.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
 public class RecruiterJobsDto {
 
     private Long totalCandidates;

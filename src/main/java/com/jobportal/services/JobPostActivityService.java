@@ -1,14 +1,18 @@
 package com.jobportal.services;
 
-import com.jobportal.entity.*;
-import com.jobportal.repository.JobPostActivityRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import org.springframework.stereotype.Service;
+
+import com.jobportal.entity.IRecruiterJobs;
+import com.jobportal.entity.JobCompany;
+import com.jobportal.entity.JobLocation;
+import com.jobportal.entity.JobPostActivity;
+import com.jobportal.entity.RecruiterJobsDto;
+import com.jobportal.repository.JobPostActivityRepository;
 
 @Service
 public class JobPostActivityService {

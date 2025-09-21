@@ -1,14 +1,15 @@
 package com.jobportal.util;
 
-import com.jobportal.entity.UsersType;
-import com.jobportal.entity.Users;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import com.jobportal.entity.Users;
+import com.jobportal.entity.UsersType;
 
 public class CustomUserDetails implements UserDetails {
 
